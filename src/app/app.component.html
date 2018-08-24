@@ -21,10 +21,10 @@
       <option value="Goldfish">Goldfish</option>
     </select>
 
-    <span *ngIf="pet">You would like to own a {{pet}}</span>
+    <span data-hook="pet-message" class="message" *ngIf="pet">You would like to own a {{pet}}</span>
 
     <div *ngIf="response | async as res">
-      <span>{{res.message}}</span>
+      <span data-hook="slow-message" class="message">{{res.message}}</span>
     </div>
   </div>
 </div>
