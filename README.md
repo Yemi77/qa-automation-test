@@ -9,6 +9,9 @@ I'll maybe add a few more things to test but at the moment we have a login and a
 Username is `user1`
 Password is `password1`
 
+You can either run the app with `npm start` or go to 
+[http://louishoughton.com/qa-automation-test](http://louishoughton.com/qa-automation-test)
+
 ## Tests
 
 * Write a test that attempts to login with the wrong credentials and checks the failure 
