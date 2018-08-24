@@ -27,6 +27,8 @@ displays.
 
 ## Requirements
 
+* Provide a Github or Bitbucket repo.
+
 * Use any framework you like.
 
 * I should be able to run your tests with a single command like `npm run functional-tests`.
