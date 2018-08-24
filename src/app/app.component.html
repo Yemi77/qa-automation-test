@@ -1,8 +1,32 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
+  <h1 data-hook="header" class="header-large">
     Welcome to {{ title }}!
   </h1>
+
+  <div *ngIf="!loggedIn">
+    <input type="text" [(ngModel)]="username" data-hook="username">
+    <input type="password" [(ngModel)]="password" data-hook="password">
+    <button (click)="login()">Login</button>
+  </div>
+  <div *ngIf="denied">
+    <span data-hook="login-denied" class="message--error">That username or password are incorrect</span>
+  </div>
+  <div *ngIf="loggedIn">
+    <span data-hook="logged-in-message" class="message">You are logged in</span>
+
+    <select class="dropdown--enabled form-element" data-hook="dropdown" [(ngModel)]="pet">
+      <option value="Parrot">Parrot</option>
+      <option value="Spider">Spider</option>
+      <option value="Goldfish">Goldfish</option>
+    </select>
+
+    <span *ngIf="pet">You would like to own a {{pet}}</span>
+
+    <div *ngIf="response | async as res">
+      <span>{{res.message}}</span>
+    </div>
+  </div>
 </div>
 
 

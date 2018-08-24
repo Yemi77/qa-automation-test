@@ -11,6 +11,6 @@ export class DataService {
   constructor() { }
 
   fetch() {
-      return of(mockData).pipe(delay(5000));
+      return of(mockData).pipe(delay(3000));
   }
 }

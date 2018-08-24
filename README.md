@@ -1,27 +1,34 @@
-# AngTest
+# SPA QA Automation Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0-rc.6.
+This project provides a *very* simple application that's sole purpose for being is to
+have automation tests run on it. It's incredibly basic, has no styling and does a a
+few things very badly. It should probably have routing and such...
 
-## Development server
+I'll maybe add a few more things to test but at the moment we have a login and a drop down.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Username is `user1`
+Password is `password1`
 
-## Code scaffolding
+## Tests
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Write a test that attempts to login with the wrong credentials and checks the failure 
+message.
 
-## Build
+* Write a test that logs in successfully 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Write a test that logs in successfully and chooses an option from the drop down and
+checks the output is correct.
 
-## Running unit tests
+* Write a test that logs in successfully and makes sure the asynchronously loaded message
+displays.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Requirements
 
-## Running end-to-end tests
+* Use any framework you like.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* I should be able to run your tests with a single command like `npm run functional-tests`.
 
-## Further help
+* Code should be well structured
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Your code should not contain sensitive data like user names and passwords. Externalise
+this data.

@@ -1,32 +1,3 @@
-[
-    {
-        "name": "Groceries",
-        "items": [
-            {
-                "name": "Carrots",
-                "items": [
-                    {
-                        "name": "Carrots (Loose)"
-                    },
-                    {
-                        "name": "Carrots (bagged)"
-                    }
-                ]
-            },
-            {
-                "name": "Bananas"
-            }
-        ]
-    },
-    {
-        "name": "Electronics",
-        "items": [
-            {
-                "name": "TVs"
-            },
-            {
-                "name": "Mobile Phones"
-            }
-        ]
-    }
-]
+{
+  "message": "Here be some data that takes a while to load"
+}
