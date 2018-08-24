@@ -5,8 +5,10 @@
   </h1>
 
   <div *ngIf="!loggedIn">
-    <input type="text" [(ngModel)]="username" data-hook="username">
-    <input type="password" [(ngModel)]="password" data-hook="password">
+    <label for="username">Username</label>
+    <input id="username" type="text" [(ngModel)]="username" data-hook="username">
+    <label for="password">Password</label>
+    <input id="password" type="password" [(ngModel)]="password" data-hook="password">
     <button (click)="login()">Login</button>
   </div>
   <div *ngIf="denied">
